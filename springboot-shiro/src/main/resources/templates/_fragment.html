@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:fragment="head(title)">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title th:replace="${title}">shiro权限管理系统</title>
+    <link rel="stylesheet" href="/layui/css/layui.css" th:href="@{/layui/css/layui.css}">
+</head>
+<body>
+<div th:fragment="content" class="content">空白，不要引入！！！</div>
+
+<th:block th:fragment="script">
+<script src="/layui/layui.js" th:src="@{/layui/layui.js}"></script>
+<script src="/layui/index.js" th:src="@{/layui/index.js}"></script>
+</th:block>
+</body>
+</html>
